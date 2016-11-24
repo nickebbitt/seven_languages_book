@@ -1,1 +1,1 @@
-Code examples and exercises from the Seven Languages in Seven Weekd book by Bruce A. Tate.
+Code examples and exercises from the "Seven Languages in Seven Weeks" book by Bruce A. Tate.
