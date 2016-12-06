@@ -39,7 +39,7 @@ stack.pop()
 assert_equal([1, 2, 3], stack)
 puts "stack size = #{stack.size}"
 
-# array as a queue
+puts "array as a queue"
 queue = [3, 2, 1]
 puts "queue items: #{queue}"
 assert_equal([3, 2, 1], queue)
@@ -51,3 +51,16 @@ puts "first_item: #{first_item}"
 assert_equal(1, first_item)
 assert_equal([4, 3, 2], queue)
 puts "queue items: #{queue}"
+
+# Print contents of an array of 16 numbers #
+puts "sixteen_numbers"
+sixteen_numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+
+puts "4 at a time using each"
+p sixteen_numbers
+sixteen_numbers.each do
+  |number| p sixteen_numbers[((number-4)...number)] if number % 4 == 0
+end
+
+puts "4 at a time just using slice"
+sixteen_numbers.each_slice(4) { |slice| p slice }
